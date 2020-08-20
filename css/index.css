@@ -136,6 +136,7 @@ section form {
   align-items: center;
 }
 section form input {
+  height: 100%;
   padding: 0.3rem;
   margin: 0.5rem;
 }
@@ -158,6 +159,9 @@ section footer {
 }
 section footer#low-container {
   margin-top: 30%;
+}
+section footer#low-about-container {
+  margin-top: 22%;
 }
 section footer#low-sign-container {
   margin-top: 15%;
