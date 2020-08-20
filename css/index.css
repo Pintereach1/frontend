@@ -113,6 +113,7 @@ body#layout #con {
   width: 100%;
 }
 h1 {
+  height: 100%;
   font-family: "Roboto";
   color: black;
   font-weight: 700;
@@ -138,6 +139,19 @@ section form input {
   padding: 0.3rem;
   margin: 0.5rem;
 }
+section#about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section#about-content p {
+  width: 45%;
+  height: 100%;
+  font-size: 1.8rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
+}
 section footer {
   display: flex;
   flex-shrink: 0;
@@ -147,6 +161,9 @@ section footer#low-container {
 }
 section footer#low-sign-container {
   margin-top: 15%;
+}
+section footer#low-contact-container {
+  margin-top: 10%;
 }
 footer button a {
   text-decoration: none;
