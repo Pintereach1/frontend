@@ -1,7 +1,4 @@
 /* reset css */
-html,
-body,
-div,
 span,
 applet,
 object,
@@ -15,7 +12,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -49,7 +45,6 @@ ol,
 ul,
 li,
 fieldset,
-form,
 label,
 legend,
 table,
@@ -67,14 +62,10 @@ details,
 embed,
 figure,
 figcaption,
-footer,
-header,
 hgroup,
 menu,
-nav,
 output,
 ruby,
-section,
 summary,
 time,
 mark,
@@ -83,7 +74,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -93,15 +84,36 @@ aside,
 details,
 figcaption,
 figure,
-footer,
-header,
 hgroup,
-menu,
-nav,
-section {
+menu {
   display: block;
 }
 /* every element is a border-box */
 * {
   box-sizing: border-box;
+}
+html,
+body {
+  background-color: lightcyan;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+body#layout .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-evenly;
+  align-items: center;
+}
+body#layout #con {
+  height: 100%;
+  box-shadow: 0.8rem 1.6rem 0.8rem 1.5rem rgba(81, 134, 155, 0.747);
+  width: 100%;
+  border: 1.5rem ridge rgba(55, 51, 56, 0.6);
+}
+header button a {
+  text-decoration: none;
+}
+footer button a {
+  text-decoration: none;
 }
