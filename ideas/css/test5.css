@@ -1,0 +1,15 @@
+div.item {
+    display:inline-block;
+    max-width:300px;
+    border:1px solid grey;    
+    position:relative;
+    min-height:10px;
+}
+a.toggle {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    display:inline-block;
+    background:white;
+    padding-left:10px;
+}

@@ -28,6 +28,43 @@ body#layout{
 
 }
 
+section{
+    height:100%;
+    
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        input{
+            height:100%;
+            padding:.3rem;
+            margin:.5rem;
+        }
+       
+    }
+}
+
+section#about-content{
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        p{
+            width:45%;
+            height:100%;
+            font-size: 1.8rem;
+            padding:.3rem;
+            margin:.5rem;
+        }
+       
+    }
+
+
+
 h1{
     height:100%;
     font-family: "Roboto";
@@ -38,4 +75,8 @@ h1{
 button{
     margin:.4rem;
     padding:.2rem;
+}
+a,link::after{
+    color:blue;
+    text-decoration: none;
 }

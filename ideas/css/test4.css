@@ -22,9 +22,11 @@ p {
 	border-radius: 5px; 
 	color: #fff;
 	cursor: pointer;
-	font-szie: 0.8em;
+	/*was out*/
+	font-size: 0.8em;
 	margin-top: 0.5em;
-	margin-bototm: 0.5em;
+	/*was out*/
+	margin-bottom: 0.5em;
 	padding: 0.5em;
 	text-align: center;
 	width: 12em;
