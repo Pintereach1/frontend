@@ -247,6 +247,13 @@ header button a {
   width: 100%;
   height: 100%;
 }
+.crd .crd-category {
+  font-style: italic;
+}
+.crd .crd-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 .crd-desc {
   line-height: 1.5;
   border: 1px solid black;
