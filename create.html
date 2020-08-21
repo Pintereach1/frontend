@@ -11,14 +11,14 @@
 </head>
 
 <body id="layout">
-
+    <script src="js/index.js"></script>
     <div id="con" class="container">
         
         
                 <section id="high-container" class='secStyle'>
                         <header id='navHeader' >
                                 <nav id='myNav'>
-                                    <button><a href="create.html">Create Card</a></button>
+                                    <button type="button" onClick="createCard()">Create Card</button>
                                     <button><a href="index.html">View Cards</a></button>
                                     <button><a href="aboutus.html">About Us</a></button>
                                     <button><a href="signout.html">Sign-Out</a></button>
@@ -30,27 +30,31 @@
                     <section id="create-content" class='secStyle'>
                         <div class='crd'>
                             <p class='crd-category'>
-                                <input type="text" value="category">
+                                <input id="category" type="text" value="category">
                             </p> 
                             <p class='crd-title'>
-                                <input type="text" value="title">
+                                <input id="title" type="text" value="title">
                             </p>
                             <!-- make scrollbar description text-->
                             <p class='crd-desc'>
-                                <textarea name="description" id="txtADesc" cols="24" rows="16"></textarea>
+                                <textarea id="descrip" name="description" id="txtADesc" cols="24" rows="16"></textarea>
                             </p>
                             <p class='crd-url'>
-                                <input type="text" value="URL">    
+                                <input id="URl" type="text" value="URL">    
                             </p>
                             
                             <hr>
                             <p class='crd-somedia'>
-                                <input type="text" value="Social Media">
+                                <input id="socialM" type="text" value="Social Media">
                             </p>
                         </div>
                                       
                     </section>
-                    
+                    <section>
+                        <p id="test">
+
+                        </p>
+                    </section>
                     
     </div><!-- container -->        
 </body>
