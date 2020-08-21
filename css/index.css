@@ -123,6 +123,12 @@ section form input {
   padding: 0.3rem;
   margin: 0.5rem;
 }
+section#index-content {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  height: 100%;
+}
 section#about-content {
   display: flex;
   flex-direction: column;
@@ -186,9 +192,21 @@ header button a {
   border: 1px solid black;
   width: 22%;
   height: 100%;
-  box-shadow: 10px -10px #CCC;
+  box-shadow: 10px -10px #6b6a6a;
 }
 #index-content .crd {
+  border-radius: 10%;
+  background-color: rgba(243, 237, 237, 0.953344);
+}
+#create-content {
+  margin-top: 1rem;
+  border-radius: 10%;
+  border: 1px solid black;
+  width: 22%;
+  height: 100%;
+  box-shadow: 10px -10px #6b6a6a;
+}
+#create-content .crd {
   border-radius: 10%;
   background-color: rgba(243, 237, 237, 0.953344);
 }
