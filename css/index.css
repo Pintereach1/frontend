@@ -154,11 +154,12 @@ link::after {
   color: blue;
   text-decoration: none;
 }
+hr {
+  height: 100%;
+  width: 100%;
+}
 header button a {
   text-decoration: none;
-}
-#index-content {
-  background: lightgray;
 }
 .secStyle .crd {
   display: flex;
@@ -166,12 +167,23 @@ header button a {
   justify-content: space-evenly;
   align-items: center;
 }
+#index-content {
+  border-radius: 10%;
+  border: 1px solid black;
+  width: 22%;
+  height: 100%;
+  box-shadow: 10px -10px #CCC;
+}
+#index-content .crd {
+  border-radius: 10%;
+  background-color: rgba(243, 237, 237, 0.953344);
+}
 .crd {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
 }
 .crd-desc {
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 1px;
   padding: 1px;
   width: 30rem;
