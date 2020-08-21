@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Background from '../img/homepage-back.jpg';
+
 
 
 
@@ -25,7 +27,6 @@ class HomePage extends React.Component {
                     <p>Not a member of Pintereach yet?</p>
                       <Link to="./register" className="home-register">Register</Link>
                 </div>
-                <img className="home-img" src="img/homepage-back.jpg" alt="book photo"></img>
             </div>
             </>
         );

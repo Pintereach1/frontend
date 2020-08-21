@@ -7,7 +7,10 @@ import { NavLink } from "react-router-dom";
 class RegisterPage extends React.Component {
   state = {
       username: "",
-      password: ""
+      password: "",
+      name: "",
+      email: "",
+      role: []
   }
 
 render() {
