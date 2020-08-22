@@ -10,9 +10,10 @@ class cardInput{
 }
 
 
-
+// Add the BUttons to the a new div element at the bottom of 
+// Each .crd within each section that is clicked. 
 function addElement (idClkd) {
- document.body.onload = addElement; 
+ //document.body.onload = addElement; 
   // create a new div element 
   let newDiv = document.createElement("div"); 
   let newDiv2 = document.createElement("div"); 
@@ -43,25 +44,30 @@ function addElement (idClkd) {
     let EditBtn = document.createElement("button");   // Create a <button> element
     EditBtn.innerHTML = "Edit";            
     let newDiv = document.createElement("div"); 
+    newDiv.className = "btnEremove";
     newDiv.append(DeleteBtn);
     newDiv.append(EditBtn);
    // document.body.insertBefore(userItem,EditBtn); 
    // userItem.appendChild(EditBtn);
   //  console.log('time');
-  console.log(userItem);
+  // console.log(userItem);
     userItem.append(newDiv);
     
   });
   
-  //addin.appendChild(EditBtn);
-  // newDiv.appendChild(EditBtn);
-  //newDiv.appendChild(DeleteBtn);
-  //newDiv.append(addin);
-  // addin2.appendChild(newDiv2);
-  // addin2.appendChild(newDiv2);
-  // addin3.appendChild(EditBtn);
-  // addin3.appendChild(DeleteBtn);
-  // document.body.insertBefore(currentDiv, addin); 
+}
+
+// Remove elements 
+function removeElm(idClkd){
+  let addin  = document.querySelector("#"+idClkd);
+  let addin2  = addin.querySelectorAll(".btnEremove");
+  //let removeit = addin.getElementsByTagName("button");
+  //let addin3  = currentDiv.querySelector("div.crd");
+// Adds a Div to each .crd but only adds buttons to the last 1
+  addin2.forEach(function(userItem) {
+    userItem.parentNode.removeChild(userItem); 
+    
+  });
 }
 
 function myFunction(clickdID) {
@@ -69,7 +75,8 @@ function myFunction(clickdID) {
     let theStyle = document.getElementById(clickdID).style.backgroundColor;
   if(theStyle === "yellow"){
     let highlight = document.getElementById(clickdID);
-  highlight.style.backgroundColor="transparent";
+    highlight.style.backgroundColor="transparent";
+    removeElm(clickdID);
   }else{
     let highlight = document.getElementById(clickdID);
     highlight.style.backgroundColor="yellow";
