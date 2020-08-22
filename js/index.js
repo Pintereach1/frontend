@@ -36,17 +36,23 @@ function addElement (idClkd) {
   let addin  = document.querySelector("#"+idClkd);
   let addin2  = addin.querySelectorAll(".crd");
   let addin3  = currentDiv.querySelector("div.crd");
-
+// Adds a Div to each .crd but only adds buttons to the last 1
   addin2.forEach(function(userItem) {
+    let DeleteBtn = document.createElement("BUTTON");   // Create a <button> element
+    DeleteBtn.innerHTML = "Delete";     
+    let EditBtn = document.createElement("button");   // Create a <button> element
+    EditBtn.innerHTML = "Edit";            
     let newDiv = document.createElement("div"); 
+    newDiv.append(DeleteBtn);
+    newDiv.append(EditBtn);
    // document.body.insertBefore(userItem,EditBtn); 
    // userItem.appendChild(EditBtn);
   //  console.log('time');
+  console.log(userItem);
     userItem.append(newDiv);
-    newDiv.append(DeleteBtn);
-    newDiv.append(EditBtn);
     
   });
+  
   //addin.appendChild(EditBtn);
   // newDiv.appendChild(EditBtn);
   //newDiv.appendChild(DeleteBtn);
