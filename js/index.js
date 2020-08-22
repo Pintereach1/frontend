@@ -12,9 +12,10 @@ class cardInput{
 
 
 function addElement (idClkd) {
- // document.body.onload = addElement; 
+ document.body.onload = addElement; 
   // create a new div element 
   let newDiv = document.createElement("div"); 
+  let newDiv2 = document.createElement("div"); 
   // new buttons 
   let DeleteBtn = document.createElement("BUTTON");   // Create a <button> element
   DeleteBtn.innerHTML = "Delete";     
@@ -31,12 +32,29 @@ function addElement (idClkd) {
 
   // add the newly created element and its content into the DOM 
 
-  let currentDiv = document.querySelector(idClkd);
-  let addin  = currentDiv.querySelectorAll(".crd"); 
-  addin.appendChild(EditBtn);
-  addin.appendChild(DeleteBtn);
-  addin.appendChild(EditBtn);
-  addin.appendChild(DeleteBtn);
+  let currentDiv = document.getElementById(idClkd);
+  let addin  = document.querySelector("#"+idClkd);
+  let addin2  = addin.querySelectorAll(".crd");
+  let addin3  = currentDiv.querySelector("div.crd");
+
+  addin2.forEach(function(userItem) {
+    let newDiv = document.createElement("div"); 
+   // document.body.insertBefore(userItem,EditBtn); 
+   // userItem.appendChild(EditBtn);
+  //  console.log('time');
+    userItem.append(newDiv);
+    newDiv.append(DeleteBtn);
+    newDiv.append(EditBtn);
+    
+  });
+  //addin.appendChild(EditBtn);
+  // newDiv.appendChild(EditBtn);
+  //newDiv.appendChild(DeleteBtn);
+  //newDiv.append(addin);
+  // addin2.appendChild(newDiv2);
+  // addin2.appendChild(newDiv2);
+  // addin3.appendChild(EditBtn);
+  // addin3.appendChild(DeleteBtn);
   // document.body.insertBefore(currentDiv, addin); 
 }
 
