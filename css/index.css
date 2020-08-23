@@ -184,6 +184,22 @@ div.crd p#crd-desc {
   max-width: 100%;
   max-height: 100%;
 }
+@media (max-width: 630px) and (max-height: 700px) {
+  section.index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6rem 1rem 1rem 1rem;
+    width: 94%;
+    height: 100%;
+    border-bottom: 1px solid transparent;
+  }
+  section.index-content div.crd {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0.7rem 0rem 1.2rem 0rem;
+  }
+}
 header button a {
   text-decoration: none;
 }
@@ -194,6 +210,8 @@ header button a {
   align-items: center;
 }
 #high-container {
+  width: auto;
+  height: 100%;
   margin-bottom: 1rem;
 }
 .index-content {
@@ -212,7 +230,7 @@ header button a {
   margin-top: 1rem;
   border-radius: 10%;
   border: 1px solid black;
-  width: 22%;
+  width: 32%;
   height: 100%;
   box-shadow: 10px -10px #6b6a6a;
 }
@@ -261,6 +279,20 @@ header button a {
   padding: 0.4em;
   width: 80%;
   height: 20em;
+}
+@media (max-width: 900px) and (max-height: 700px) {
+  #create-content {
+    margin-top: 1rem;
+    border-radius: 10%;
+    border: 1px solid black;
+    width: 52%;
+    height: 100%;
+    box-shadow: 10px -10px #6b6a6a;
+  }
+  #create-content .crd {
+    border-radius: 10%;
+    background-color: rgba(243, 237, 237, 0.953344);
+  }
 }
 section footer {
   display: flex;

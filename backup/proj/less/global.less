@@ -12,8 +12,7 @@ body#layout{
     
     .container{
         display: flex;
-        // box-sizing: border-box;
-        // flex-wrap: wrap;
+        //flex-wrap: wrap;
         flex-direction: column;
         justify-items: space-evenly;
         align-items: center;
@@ -58,6 +57,8 @@ section.index-content{
     display:flex;
     flex-direction: row;
     justify-content: center;
+   
+    
     margin:6rem;
             width:94%;
             height: 100%;
@@ -118,7 +119,7 @@ hr{
 div.crd{
 
    display: flex-inline;
-   position: relative;
+   position: relative;;
    height:100%;
    width:auto;
 //    display: flex;
@@ -142,33 +143,3 @@ div.crd{
     
 
 }
-
-
-@media @TabNdown{
-    // place margin around each card
-    div.crd{
-
-   margin:.7rem 0rem 1.2rem 0rem;
-    }
-
-    section.index-content{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        margin:6rem 1rem 1rem 1rem;
-                width:94%;
-                height: 100%;
-                div.crd{
-                    flex-wrap: wrap;
-                    box-sizing: border-box;
-                  
-            // margin:1px;
-            // background-color: grey;
-            // width: 16rem;
-            // height: 24rem;
-               
-                
-            }
-    }
-}
-
