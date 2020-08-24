@@ -10,7 +10,7 @@ class RegisterPage extends React.Component {
       password: "",
       name: "",
       email: "",
-      role: []
+      role: ""
   }
 
 render() {
