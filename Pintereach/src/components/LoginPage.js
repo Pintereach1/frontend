@@ -2,9 +2,9 @@ import React from "react";
 import { connect } from "react-redux"
 
 import { login } from "../actions/actions";
-import { render } from "react-dom";
 
-class SignIn extends React.Component {
+
+class LoginPage extends React.Component {
   state= {
     credentials: {
       username: "",
@@ -24,7 +24,7 @@ class SignIn extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     this.props.login(this.state.credentials)
-    this.props.history.push("./login")
+    this.props.history.push("./ArticleList")
   }
 
 
@@ -60,5 +60,5 @@ class SignIn extends React.Component {
   }
 };
 
-export default connect(null, {login})(SignIn);
+export default connect(null, {login})(LoginPage);
 

@@ -1,7 +1,7 @@
 import React from "react";
-import { connect } from 'react-redux'
-import { register } from '../actions/actions'
-import { NavLink } from 'react-router-dom'
+import { connect } from "react-redux";
+import { register } from "../actions/actions";
+
 
 
 
@@ -77,4 +77,4 @@ render() {
 
 };
 
-export default Register`Page;
+export default connect(null, {register})(RegisterPage);
